@@ -1,4 +1,4 @@
-describe('my own map-like methods', function() {
+describe('my own map-like methods', () => {
  describe("mapToNegativize returns an array with all values made negative", function() {
    it("transforms correctly", function(){
       expect(mapToNegativize([1, 2, 3, -9])).to.eql([-1, -2, -3, 9])
@@ -24,9 +24,9 @@ describe('my own map-like methods', function() {
     })
   })
  })
-})
+});
 
-describe('my own reduce-like methods', function() {
+describe('my own reduce-like methods', () => {
   describe("reduceToTotal returns a running total when not given a starting point", function() {
     it("reduces correctly", function(){
       sourceArray = [1,2,3]
@@ -69,4 +69,4 @@ describe('my own reduce-like methods', function() {
       expect(reduceToAnyTrue(sourceArray)).to.equal(false)
     })
   })
-})
+});
